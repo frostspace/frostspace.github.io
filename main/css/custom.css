@@ -1,0 +1,130 @@
+  @font-face {
+    font-family: "poppins";
+    src: url("../fonts/Poppins-Regular.otf");
+  }
+
+  @font-face {
+    font-family: "Better Grade";
+    src: url("../fonts/BetterGrade-519DV.ttf");
+  }
+
+  .p{
+    font-family: "poppins", sans-serif;
+  }
+  
+
+  
+  :root {
+    --primary-color: #1D5B79;
+    --bg-col: hsl(217, 19%, 24%);
+    --shadow: 0px 0px 30px 0 hsla(202, 62%, 33%, 1);
+      /* Font */
+  --font-family: "Manrope", sans-serif;
+  --font-quote: 1.75rem;
+  --font-normal: 1rem;
+  }
+
+  
+  .container {
+    font-family: "poppins", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: var(--width-desktop);
+    margin: 0 auto;
+    height: 100vh;
+    padding: 1rem;
+  }
+  
+  .card {
+    font-family: "poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: var(--bg-col);
+    padding: 2.5rem 2rem 0;
+    max-width: 540px;
+    border-radius: 1rem;
+  }
+  
+  .advice-tag {
+    font-family: "poppins", sans-serif;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 600;
+    font-size: 0.75rem;
+  }
+  
+  .advice-quote {
+    font-weight: var(--weight-primary);
+    margin: 1.5rem 0 2.1rem;
+    font-size: var(--font-quote);
+    font-weight: var(--weight-primary);
+  }
+  
+  .btn {
+    background: var(--primary-color);
+    padding: 1.3rem;
+    border-radius: 50%;
+    transform: translateY(30px);
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .btn:hover,
+  .btn:focus {
+    box-shadow: var(--shadow);
+  }
+  
+  .wrapper {
+    margin: 0;
+    padding: 0;
+  }
+
+  
+  @media only screen and (min-width: 375px) and (max-width: 812px) {
+    .container {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+  }
+  
+
+ 
+
+.advice-text {
+    font-family: "Better Grade", sans-serif;
+    font-size: 70px;
+    text-align: center;
+    padding: 2%;
+  }
+  
+body {
+    margin: 0;
+    overflow: hidden;
+    cursor: url("data:image/svg+xml,%3Csvg height='6' width='6' viewBox='0 0 8 8' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='4' cy='4' fill='%23eee' r='4'/%3E%3C/svg%3E") 3 3, auto;
+  }
+  
+ /*Cursor Effects */
+
+.ripple {
+  width: 10px;
+  height: 10px;
+  background-color: transparent;
+  position: fixed;
+  border-radius: 50%;
+  border: 1px solid #ffffff59;
+}
+
+@keyframes ripple-effect {
+  to {
+    transform: scale(15);
+    opacity: 0.01;
+  }
+}
+
+/* Cursor Effect end */

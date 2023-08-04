@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url("https://nairo.ibthemespro.com/img/border-dark.png"),rgb(14, 14, 23);
+    color: hsla(0, 0%, 100%, .8);
+    font-family: "Rubik", monospac-serif;
+    font-size: 15px;
+    visibility: hidden;
+    height:100vh;
+    display:grid;
+    place-items:center;
+    cursor: url("data:image/svg+xml,%3Csvg height='6' width='6' viewBox='0 0 8 8' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='4' cy='4' fill='%23eee' r='4'/%3E%3C/svg%3E") 3 3, auto;
+}
+
+img {
+    width: 100%;
+}
+
+#main {
+    display: flex;
+    padding: 0 10vw;
+
+}
+
+.left {
+    flex: 1;
+}
+
+.right {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 3vw;
+}
+
+.left .left-bg {
+    border-radius: 50%;
+    font-size: 0;
+    padding: 5px;
+    max-width: 460px;
+    max-height: 460px;
+    background-color: rgb(255, 215, 187);
+    box-shadow:0px 0px 30px 0px rgb(193,168,141);
+    -webkit-animation-name: hvr-bob-float, hvr-bob;
+    animation-name: hvr-bob-float, hvr-bob;
+    -webkit-animation-duration: .3s, 1.5s;
+    animation-duration: .3s, 1.5s;
+    -webkit-animation-delay: 0s, .3s;
+    animation-delay: 0s, .3s;
+    -webkit-animation-timing-function: ease-out, ease-in-out;
+    animation-timing-function: ease-out, ease-in-out;
+    -webkit-animation-iteration-count: 1, infinite;
+    animation-iteration-count: 1, infinite;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-direction: normal, alternate;
+    animation-direction: normal, alternate;
+}
+
+.left .left-bg img {
+    border-radius: 50%;
+}
+
+.right ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.right ul li {
+    line-height: 2.3;
+    width: 50%;
+}
+
+.right p {
+    color: hsla(0, 0%, 100%, .8);
+    line-height: 1.7;
+}
+.right ul li strong{
+    color:white;
+}
+.right p img{
+    display: inline;
+    width: 4%;
+}
+@media screen and (max-width:900px) {
+    #main{
+        flex-direction: column;
+    }
+    .left-bg{
+        margin: 0 auto;
+    }
+    .right{
+        padding: 3vw 0;
+    }
+}
+
+
+
+/*Cursor Effects */
+  .ripple {
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+    position: fixed;
+    border-radius: 50%;
+    border: 1px solid #ffffff59;
+}
+
+@keyframes ripple-effect {
+    to {
+        transform: scale(15);
+        opacity: 0.01;
+    }
+}
+
+/* Cursor Effect end */
+
+a{
+  color:white;
+}
